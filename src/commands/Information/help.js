@@ -34,7 +34,7 @@ module.exports = {
         
         } else if (!args[0]) {
 const embed = new MessageEmbed()
-.setAuthor(`HuoHuo`, client.user.displayAvatarURL({ dynamic: true }))
+.setAuthor(`HuoHuo Help`, client.user.displayAvatarURL({ dynamic: true }))
 .setColor('#2F3136')
 .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
 .setDescription(`Prefix của bot là: \`${prefix}\`\nDùng menu, hoặc dùng \`${prefix}help [category]\` để xem các lệnh dựa trên danh mục!\n\n`)
