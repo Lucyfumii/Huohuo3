@@ -1,0 +1,459 @@
+{
+	"player": {
+		"noplayer": "Không có bài hát nào được phát bây giờ...",
+		"addq": "**Đã thêm bài hát vào danh sách phát**",
+		"song": "Song",
+		"addlist": "**Đã thêm danh sách phát vào hàng chờ**",
+		"nomusic": "Không có bài hát nào được phát.",
+		"anotherVc": "Tôi đã ở trong phòng &lt;#{vc}> voice channel!",
+		"noVc": "Bạn không ở trong voice channel!",
+		"vcmust": "Bạn phải vào một voice channel!",
+		"samevc": "Bạn phải ở cùng một kênh với",
+		"cmderr": "Đã xảy ra lỗi khi thực hiện lệnh đó.\nTôi sẽ liên hệ với chủ sở hữu của bot để sửa nó ngay lập tức",
+		"epause": "Trình phát đã bị tạm dừng vì mọi người đã rời đi",
+		"eresume": "Tiếp tục phát lại vì tất cả các bạn đã để lại cho tôi âm nhạc để chơi một mình",
+		"track": {
+			"error": "❌ Lỗi khi tải bài hát! Bài hát bị lỗi",
+			"end": "**Hàng đợi nhạc đã kết thúc**",
+			"dc": "Tôi đã bị ngắt kết nối khỏi",
+			"move": "Đã chuyển kênh thoại của người chơi sang "
+		}
+	},
+	"events": {
+		"msgcrt": {
+			"embed": "**› My prefix của server là`{Pre}`**\n**› Bạn có thể thấy tất cả các loại lệnh của tôi bằng  `{Pre}`help**",
+			"embed2": "Tôi không có**`SEND_MESSAGES`** sự cho phép trong <#{channelId}> để thực hiện điều này**`{cmdname}`** command.",
+			"embed3": "Tôi không có**`EMBED_LINKS`** quyền để thực hiện điều này**`${cmdname}`** command.",
+			"embed4": "Bạn không cung cấp bất kỳ đối số nào,",
+			"embed5": "Error: Tôi cần`EMBED_LINKS` sự cho phép để hoạt động."
+		},
+		"inter": {
+			"noplayer": "Không có người chơi nào cho guild này",
+			"noparam": "Không có người chơi nào cho guild này",
+			"use": "để sử dụng lệnh này!"
+		}
+	},
+	"prams": {
+		"connect": "Tôi không có đủ quyền để thực hiện lệnh này! xin vui lòng cho phép tôi CONNECT or SPEAK",
+		"vc": "Tôi không có đủ quyền kết nối vc của bạn, vui lòng cho phép tôi CONNECT or SPEAK",
+		"manage": "Bạn phải có`Manage Guild` quyền sử dụng lệnh này.",
+		"prams": "Bạn không thể sử dụng lệnh này."
+	},
+	"button": {
+		"invite": "Invite",
+		"support": "Support",
+		"github": "Github",
+		"wrongbut": "Chỉ **{Tag}** có thể sử dụng nút này, nếu bạn muốn thì bạn phải chạy lại lệnh.",
+		"vcmst": "Bạn chưa kết nối với {Vc} để sử dụng các nút này."
+	},
+	"cmd": {
+		"247": {
+			"name": "247",
+			"des": "<:keqing:950934310091882529> 24/7 trong kênh thoại",
+			"aliases": [
+				"24h",
+				"24/7",
+				"24*7"
+			],
+			"use": "",
+			"on": "24/7 mode is now **ON**",
+			"off": "24/7 mode is now **OFF**"
+		},
+		"ping": {
+			"name": "ping",
+			"des": "<:ganyu:950931678241652736> Check Ping Bot",
+			"use": "",
+			"content": "Pinging...",
+			"author": "Pong",
+			"bot": "Bot Latency:",
+			"api": "API Latency:",
+			"footer": "Requested by"
+		},
+		"play": {
+			"name": "play",
+			"des": "<:keqing:950934310091882529> Dùng để phát nhạc đó mấy cha",
+			"aliases": [
+				"p"
+			],
+			"use": "<YouTube>",
+			"embed": "**<:2760shyanimeblush:950941660739682305> È hem chuẩn bị hát nè!!!**",
+			"slash": {
+				"name": "input",
+				"des": "Đang tìm kiếm (name/url)",
+				"error": ":x: | **Này này, xảy ra lỗi tìm kiếm rồi**",
+				"nores": "❌ | **Tiếc ghê không có tìm thấy rồi...**",
+				"embed": "**Ta đa đã thêm bài hát vào danh sách phát**",
+				"embed1": "**Đã thêm playlist vào danh sách phát**"
+			}
+		},
+		"autoplay": {
+			"name": "autoplay",
+			"des": "<:keqing:950934310091882529> Chuyển đổi tự động phát nhạc",
+			"aliases": [
+				"ap"
+			],
+			"use": "",
+			"on": "Autoplay is now **BẬT**",
+			"off": "Autoplay is now **TẮT**"
+		},
+		"clearqueue": {
+			"name": "clearqueue",
+			"des": "<:keqing:950934310091882529> Xóa hàng chờ",
+			"aliases": [
+				"cq"
+			],
+			"use": "<Số>",
+			"remove": "Xóa tất cả bài hát khỏi danh sách phát"
+		},
+		"join": {
+			"name": "join",
+			"des": "<:keqing:950934310091882529> Vào kênh thoại",
+			"aliases": [
+				"j"
+			],
+			"use": "",
+			"embed": "**Vào kênh thoại**\nJoined &lt;#{vcId}> và ở lại &lt;#{msgChannel}>"
+		},
+		"leave": {
+			"name": "leave",
+			"des": "<:keqing:950934310091882529> Rời khỏi kênh thoại",
+			"aliases": [
+				"dc"
+			],
+			"use": "",
+			"embed": " **<a:827947357193764914:920918516813680710> Rage quit!!!!!!! see ya latee"
+		},
+		"loop": {
+			"name": "loop",
+			"des": "<:keqing:950934310091882529> Vòng lặp",
+			"aliases": [
+				"L"
+			],
+			"use": "",
+			"embed": "Loop queue is now **{queueRepeat}**",
+			"embed1": "Loop track is now **{trackRepeat}**"
+		},
+		"lyrics": {
+			"name": "lyrics",
+			"des": "<:keqing:950934310091882529> Tìm lời bài hát hiện tại",
+			"aliases": [
+				"ly"
+			],
+			"use": "",
+			"embed": "đã xảy ra lỗi không mong muốn."
+		},
+		"nowplaying": {
+			"name": "nowplaying",
+			"des": "<:keqing:950934310091882529> Hiển thị bài hát đang phát",
+			"aliases": [
+				"np"
+			],
+			"use": "",
+			"embed": "**Bài hát đang phát**\n [{SongTitle}]({SongUrl}) - `[ {SongTime} ]` \n\n{Bar}"
+		},
+		"pause": {
+			"name": "pause",
+			"des": "<:keqing:950934310091882529> Tạm dừng bản nhạc hiện đang phát",
+			"aliases": [],
+			"use": "",
+			"embed": "Trình phát đã bị tạm dừng",
+			"embed2": "**Tạm dừng**\n[{SongTitle}]({SongUrl})"
+		},
+		"queue": {
+			"name": "queue",
+			"des": "<:keqing:950934310091882529> Hiện thị danh sách nhạc đang được phát",
+			"aliases": [],
+			"use": "",
+			"embed": "Bài hát đang phát [{SongTitle}]({SongUrl}) - `[ {SongTime} ]` >",
+			"embed2": "**Bài hát đang phát**\n [{SongTitle}]({SongUrl}) - [ {SongTime} ] \n\n**Bài hát đang nằm trong hàng chờ**\n{Page}",
+			"footer": "Requested By",
+			"page": "Page",
+			"title": "Queue",
+			"slash": {
+				"name": "page",
+				"des": "Số trang hàng đợi.",
+				"title": "Server Queue"
+			}
+		},
+		"remove": {
+			"name": "remove",
+			"des": "<:keqing:950934310091882529> Xóa bài hát khỏi hàng đợi",
+			"aliases": [],
+			"use": "<Số>",
+			"embed": "Không có bài hát nào ở số {Number}.\nTổng số bài hát: ${Qsize}",
+			"embed2": " Xóa\n[{SongTitle}]({SongUrl})",
+			"slash": {
+				"name": "number",
+				"des": "Số lượng bài hát trong hàng đợi"
+			}
+		},
+		"resume": {
+			"name": "resume",
+			"des": "<:keqing:950934310091882529> Tiếp tục bài hát",
+			"aliases": [],
+			"use": "",
+			"embed": "Trình phát đã được tiếp tục",
+			"embed2": "**Tiếp tục**\n[{SongTitle}]({SongUrl})"
+		},
+		"search": {
+			"name": "search",
+			"des": "<:keqing:950934310091882529> Tìm kiếm bài hát",
+			"aliases": [],
+			"use": "search ckay",
+			"embed": "<:ganyu:950931678241652736> Đang tìm kiếm bài hát đợi tí xíu nhaa",
+			"title": "<:2621chibipaimonhesitating:950934291481755758> Nè chọn bản nhạc mà bạn muốn đi",
+			"queue": "<:kokomi1:950929222896074792> **Thêm vào danh sách phát**",
+			"slash": {
+				"name": "input",
+				"des": "Đang tìm kiếm (name/url)"
+			}
+		},
+		"seek": {
+			"name": "seek",
+			"des": "<:keqing:950934310091882529> Điều chỉnh thời lượng bài hát",
+			"aliases": [],
+			"use": "<10s>",
+			"embed": "Thời lượng tìm kiếm vượt quá thời lượng bài hát.\nThời lượng bài hát:",
+			"rewind": "**Tua lại**",
+			"forward": "**Tua thêm**",
+			"slash": {
+				"name": "time",
+				"des": "<10s>"
+			}
+		},
+		"shuffle": {
+			"name": "shuffle",
+			"des": "<:keqing:950934310091882529> Phát ngẫu nhiên",
+			"aliases": [],
+			"use": "",
+			"embed": "Phát ngẫu nhiên bài hát"
+		},
+		"skip": {
+			"name": "skip",
+			"des": "<:keqing:950934310091882529> Bỏ qua bài hát",
+			"aliases": [],
+			"use": "",
+			"embed": "Skipped"
+		},
+		"skipto": {
+			"name": "skipto",
+			"des": "<:keqing:950934310091882529> Bỏ qua bài hát hiện đang phát",
+			"aliases": [
+				"jump"
+			],
+			"use": "<Số>",
+			"embed": "Forward **{position}** bài hát",
+			"embed2": "Sử dụng: {prefix}skipto <số>",
+			"use1": "Usage",
+			"slash": {
+				"name": "name",
+				"des": "Cung cấp số âm lượng của bạn"
+			}
+		},
+		"grab": {
+			"name": "grab",
+			"des": "<:keqing:950934310091882529> Đưa cho bạn bài hát hiện tại",
+			"aliases": [
+				"save"
+			],
+			"label": "Kiểm tra tin nhắn riêng của bạn",
+			"search": "Tìm kiếm",
+			"footer": "Requested By",
+			"details": "**Song Details**",
+			"sname": "**__Tên bài hát__**",
+			"time": "**__Thời lượng__**",
+			"playedby": "**__Song Played By__**",
+			"savedby": "**__Song Saved By__**"
+		},
+		"filter": {
+			"name": "filters",
+			"des": "<:keqing:950934310091882529> Set EqualizerBand",
+			"aliases": [
+				"eq",
+				"equalizer"
+			],
+			"filinfo": "Choose what filter you want in the button",
+			"but1": "Clear",
+			"but2": "Bass",
+			"but3": "Night Core",
+			"but4": "Pitch",
+			"but5": "Distort",
+			"but6": "Equalizer",
+			"but7": "8D",
+			"but8": "Bass Boost",
+			"but9": "Speed",
+			"but10": "Vaporwave",
+			"tout": "Time is Out type again {Pre}filters",
+			"em1": " Equalizer mode is OFF",
+			"em2": "Bass mode is ON",
+			"em3": "Night Core mode is ON",
+			"em4": "Pitch mode is ON",
+			"em5": "Distort mode is ON",
+			"em6": "Equalizer mode is ON",
+			"em7": "8D mode is ON ",
+			"em8": "Bassboost mode is ON",
+			"em9": "Speed mode is ON",
+			"em10": "Vaporwave mode is ON",
+			"slash": {
+				"name": "filter",
+				"des": "Set EqualizerBand"
+			}
+		},
+		"prefix": {
+			"name": "setprefix",
+			"des": "<:kokomi1:950929222896074792> Set Custom Prefix",
+			"aliases": [
+				"prefix",
+				"pf"
+			],
+			"use": "",
+			"embed": "Vui lòng cung cấp prefix mà bạn muốn đặt!",
+			"embed2": "Bạn không thể đặt prefix một đối số kép",
+			"embed3": "Bạn không thể gửi prefix nhiều hơn 3 ký tự",
+			"embed4": "Prefix của bạn đã được cập nhật thành",
+			"embed5": "Custom prefix trong máy chủ này hiện được đặt thành",
+			"slash": {
+				"name": "prefix",
+				"des": "Hãy gửi cho tôi prefix của bạn nào"
+			}
+		},
+		"status": {
+			"name": "status",
+			"des": "Hiển thị bot trạng thái",
+			"aliases": [
+				"info"
+			]
+		},
+		"playlist": {
+			"slash": {
+				"name": "name",
+				"des": "Tên danh sách phát",
+				"name2": "number",
+				"des2": "track number"
+			},
+			"create": {
+				"name": "create",
+				"aliases": [
+					"plcreate"
+				],
+				"des": "Nhận danh sách phát của người dùng.",
+				"use": "<playlist>",
+				"argsembed": "Tên danh sách phát không được lớn hơn 10 ký tự",
+				"dataembed": "Danh sách phát này đã tồn tại! xóa nó bằng cách sử dụng: {prefix}delete {name}",
+				"existembed": "Bạn chỉ có thể tạo 10 danh sách phát",
+				"mainembed": "Đã tạo thành công danh sách phát cho bạn **{name}**"
+			},
+			"list": {
+				"name": "list",
+				"aliases": [
+					"pllist"
+				],
+				"des": "Liệt kê danh sách phát",
+				"use": "list",
+				"argsembed": "Tên danh sách phát không được lớn hơn 10 ký tự",
+				"noembed": "Bạn không có bất kỳ danh sách phát nào",
+				"author": "'s Playlists",
+				"footer": "Playlist ({list} / 10)",
+				"playembed": "**Playlist Name** {pname} **Total Tracks** {plist}"
+			},
+			"save": {
+				"name": "savequeue",
+				"aliases": [
+					"plsaveq"
+				],
+				"des": "Lưu hàng đợi chơi hiện tại trong danh sách phát của bạn.",
+				"use": "<playlist>",
+				"nodata": "Không tìm thấy danh sách phát. Vui lòng nhập tên danh sách phát chính xác",
+				"mainembed": "**Thêm** `{save}`bài hát vào {name}",
+				"noname": "Không tìm thấy danh sách phát. Vui lòng nhập tên danh sách phát chính xác"
+			},
+			"load": {
+				"name": "load",
+				"aliases": [
+					"plload"
+				],
+				"des": "phát danh sách phát đã lưu",
+				"use": "<playlist>",
+				"nodata": "Không tìm thấy danh sách phát. Vui lòng nhập tên danh sách phát chính xác",
+				"loading": "Đã thêm`{length}` bản nhạc(s) từ danh sách phát của bạn **{name}** vào hàng đợi.",
+				"errorembed": "Không thể thêm bất kỳ bản nhạc nào từ danh sách phát ** {name} ** của bạn vào hàng đợi.",
+				"mainembed": "Đã thêm `{count}` bản nhạc(s) từ danh sách phát của bạn ** {name} ** vào hàng đợi. "
+			},
+			"delete": {
+				"name": "delete",
+				"aliases": [
+					"pldelete"
+				],
+				"des": "xóa danh sách phát đã lưu của bạn",
+				"use": "<playlist>",
+				"noname": "Bạn không có danh sách phát có tên ** {name} **",
+				"mainembed": "Đã xóa thành công `{name}` danh sách phát '"
+			},
+			"info": {
+				"name": "info",
+				"aliases": [
+					"plinfo"
+				],
+				"des": "lấy thông tin danh sách phát đã lưu của bạn",
+				"use": "<playlist>",
+				"noname": "Bạn không có danh sách phát có tên ** {name} **",
+				"author": "'s Playlists",
+				"playembed": "**Playlist Name** {pname} **Total Tracks** `{plist}`"
+			},
+			"removetrack": {
+				"name": "removetrack",
+				"aliases": [
+					"plremovet"
+				],
+				"des": "xóa nhạc khỏi danh sách phát đã lưu của bạn",
+				"use": "<playlist> <track>",
+				"noname": "Bạn không có danh sách phát có tên ** {name} **",
+				"nonumber": "Bạn chưa nhập số bản nhạc (Bản nhạc bạn muốn xóa (ID OF IT)) \nXem tất cả Bản nhạc của bạn: `{prefix}info {name}`",
+				"wrongumber": "Số bản nhạc được cung cấp của bạn nằm ngoài phạm vi(`0` - `{tracks}`)\nXem tất cả bản nhạc của bạn: `{prefix}info showdetails {name}",
+				"mainembed": "Xóa **{tracks}** khỏi `{name}`"
+			},
+			"savecurrent": {
+				"name": "savecurrent",
+				"aliases": [
+					"plsavec"
+				],
+				"des": "thêm bài hát đang phát hiện tại trong danh sách phát đã lưu của bạn.",
+				"use": "<playlist>",
+				"noname": "Bạn không có danh sách phát với **{name}**",
+				"mainembed": "Đã thêm [{track}]({uri}) vào `{name}`"
+			}
+		},
+		"stop": {
+			"name": "Stop",
+			"des": "<:keqing:950934310091882529> Dừng bài hát",
+			"embed": "Stop"
+		},
+		"vol": {
+			"name": "cmd.vol.name",
+			"aliases": "cmd.vol.aliases",
+			"des": "cmd.vol.des",
+			"use": "cmd.vol.use",
+			"slash": {
+				"name": "cmd.vol.slash.name",
+				"des": "cmd.vol.slash.des"
+			}
+		},
+		"suffle": {
+			"name": "cmd.suffle.name",
+			"des": "cmd.suffle.des"
+		},
+		"help": {
+			"name": "cmd.help.name",
+			"des": "cmd.help.des"
+		},
+		"filters": {
+			"des": "cmd.filters.des"
+		},
+		"volume": {
+			"des": "Chỉnh âm thanh"
+		}
+	},
+	"Gửi meme bất kì từ reddit": "Gửi meme bất kì từ reddit",
+	"Chơi X-O": "Chơi X-O",
+	"Đua xe cùng bạn bè": "Đua xe cùng bạn bè"
+}
