@@ -11,10 +11,10 @@ module.exports = {
 
     nodes: [
     {
-      host: process.env.NODE_HOST || "uk.lavalink.platinumhost.uk",
+      host: process.env.NODE_HOST || "lava-v3.ajieblogs.eu.org",
       identifer: process.env.NODE_ID || "Main",
-      port: parseInt(process.env.NODE_PORT || "2333"),
-      password: process.env.NODE_PASSWORD || "lavalink",
+      port: parseInt(process.env.NODE_PORT || "80"),
+      password: process.env.NODE_PASSWORD || "https://dsc.gg/ajidevserver",
       secure: parseBoolean(process.env.NODE_SECURE || "false"),
 
     }
