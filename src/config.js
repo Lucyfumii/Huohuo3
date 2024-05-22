@@ -1,9 +1,9 @@
 require("dotenv").config();
 
 module.exports = {
-    token: process.env.TOKEN || "",  // your bot token
-    prefix: process.env.PREFIX || "!!", // bot prefix
-    ownerID: process.env.OWNERID || "", //your discord id
+    token: process.env.TOKEN || "MTI0MjcxMjg3MzM5NTAzMjA3NA.G51gXw.xG41dUI0k1gJg_LM-GhRVL-UbGAoETxS_QrgaY",  // your bot token
+    prefix: process.env.PREFIX || ".", // bot prefix
+    ownerID: process.env.OWNERID || "694929989065506906", //your discord id
     mongourl: process.env.MONGO_URI || "mongodb+srv://c4clan1:c4clan1@c4clan.ohxsoxt.mongodb.net/?retryWrites=true&w=majority", // MongoDb URL
     embedColor: process.env.COlOR || "#F1C40F", // embed colour
     logs: process.env.LOGS || "950433521359527936", // channel id for guild create and delete logs
